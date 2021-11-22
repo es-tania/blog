@@ -28,15 +28,6 @@ fieldset {
     width: 190px; 
 }
 
-/*mise en forme des zones de saisies*/
-/* input,
-select
- {
-    border: 1px solid blue;
-    height: 20px;
-    font-family: "Montserrat Alternates",Arial, Helvetica, sans-serif;
-} */
-
 /* bouton de connexion */
 input[type="submit"] {
     background-color: #18222b;
