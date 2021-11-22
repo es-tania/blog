@@ -1,0 +1,79 @@
+body {
+    font-family: "Montserrat Alternates", Arial, Helvetica, sans-serif;
+}
+
+.center {
+    text-align: center
+}
+.obligatoire {
+    color: red;
+}
+form {
+    width: 600px;
+    margin: 0 auto;
+}
+
+legend {
+    background-color: #18222b;
+    color: white;
+    padding: 8px 20px;
+}
+
+fieldset {
+    border: solid 1px #18222b;
+}
+
+/*alignement des label*/
+.label {
+    display: inline-block;
+    text-align: right;
+    width: 190px;
+}
+
+textarea {
+    font-family: "Montserrat Alternates", Arial, Helvetica, sans-serif;
+    /*répétition du font family car pas hérité du body par les éléments de form*/
+    border: 1px solid #18222b;
+    width: 100%;
+}
+
+/* bouton de connexion */
+input[type="submit"] {
+    background-color: #18222b;
+    font-family: "Montserrat Alternates", Arial, Helvetica, sans-serif;
+    color: white;
+    width: 200px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all ease 400ms;
+}
+
+/* hover bouton  */
+input[type="submit"]:hover {
+    background-color: white;
+    color: #18222b;
+    border: 1px solid #18222b;
+}
+
+/* mise en forme des champs input obligatoires */
+input:required {
+    border: 1px solid #e52c2c;     
+}
+
+/* mise en forme des champs input obligatoires qui deviennent valides*/
+input:required:valid {
+        border: 1px solid #1a961a;
+}
+::placeholder {
+    color: rgb(0, 153, 255);
+    opacity: 1;
+    /* Pour FIREFOX qui met une opacité par défaut sur les placeholder*/
+}
+
+/* Au focus sur tous les éléments sauf sur les boutons radio */
+:focus:not(input[type="radio"]) {
+    border: none;
+    outline: #18222b solid 2px;
+    transition: ease 400ms;
+}
