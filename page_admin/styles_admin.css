@@ -1,24 +1,21 @@
 body {
     font-family: "Montserrat Alternates", Arial, Helvetica, sans-serif;
-}
-
-.center {
-    text-align: center
+    margin: 0;
 }
 
 form {
     width: 600px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+}
+
+fieldset {
+    border: solid 1px #18222b;
 }
 
 legend {
     background-color: #18222b;
     color: white;
     padding: 8px 20px;
-}
-
-fieldset {
-    border: solid 1px #18222b;
 }
 
 /*alignement des label*/
@@ -65,4 +62,33 @@ input[type="submit"]:hover {
     border: none;
     outline: #18222b solid 2px;
     transition: ease 400ms;
+}
+
+.center {
+    text-align: center
+}
+
+/* Boîte avec tous les billets */
+
+section{
+    /* width: 100vw; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.billets{
+    border: #18222b solid 1px;
+    /* width: 30%; */
+    padding: 20px;
+    /* margin-right: 10px; */
+}
+
+.billets .titre{
+    margin: 0;
+}
+
+.date{
+    margin: 0;
+    font-size: 0.8rem;
+    font-weight: normal;
 }
