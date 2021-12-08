@@ -44,7 +44,9 @@ session_start();
             <div class="billets">
             <h3 class="titre">'.$row['titre'].'</h3>
             <p>'.$row['contenu_billet'].'</p>
+            
             <span class="date">'.$row['date_billet'].'</span>
+            <a href="">Voir le billet</a>
             </div>
             ';
         }

@@ -53,6 +53,7 @@
             <p class="center">
                 <input type="submit" value="S'inscrire">
             </p>
+            <p>J'ai déjà un compte - <a href="../page_connexion/connexion.php">M'inscrire</a></p>
         </fieldset>
     </form>
 </body>

@@ -42,6 +42,7 @@ echo "Bonjour {$_SESSION["login"]}<BR>";
             <p class="center">
                 <input type="submit" value="Se connecter">
             </p>
+            <p>Je n'ai pas de compte - <a href="../page_inscription/inscription.php">M'inscrire</a></p>
         </fieldset>
     </form>
 

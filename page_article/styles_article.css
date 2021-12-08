@@ -1,0 +1,48 @@
+body {
+    font-family: "Montserrat Alternates", Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+/* Boîte avec tous les billets */
+
+section{
+    /* width: 100vw; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.billets{
+    border: #18222b solid 1px;
+    /* width: 30%; */
+    padding: 20px;
+    /* margin-right: 10px; */
+}
+
+.billets .titre{
+    margin: 0;
+}
+
+.date{
+    margin: 0;
+    font-size: 0.8rem;
+    font-weight: normal;
+}
+
+.bouton{
+    background-color: #18222b;
+    color: white;
+    width: max-content;
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 5vh;
+}
+
+.bouton a{
+    color: white;
+    text-decoration: none;
+}
