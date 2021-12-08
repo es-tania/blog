@@ -11,13 +11,13 @@ session_start();
 
 <body>
 
-    <?php	if (isset($_SESSION["login"]))
+    <!-- <?php	if (isset($_SESSION["login"]))
 { 
 echo "Bonjour {$_SESSION["login"]}<BR>"; 
 }
 
 
-?>
+?> -->
 
     <form action="traite_login.php">
 
