@@ -20,7 +20,7 @@ if ($stmt->rowcount()==1){
 		// echo "SUPER !!! vous etes connecté";
 		$_SESSION["login"]=$_GET["login"];
 		// echo '<br><a href="../page_accueil/index.html">Aller à la page d`accueil</a>';
-		header ('Location:page_accueil/index.html');
+		header ('Location:page_accueil/index.php');
 	} else {
 		// echo $_GET["pwd"];
 		header ('Location:connexion.php?err=mdp');

@@ -1,0 +1,94 @@
+body {
+    font-family: "Montserrat Alternates", Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+form {
+    width: 600px;
+    /* margin: 0 auto; */
+}
+
+fieldset {
+    border: solid 1px #18222b;
+}
+
+legend {
+    background-color: #18222b;
+    color: white;
+    padding: 8px 20px;
+}
+
+/*alignement des label*/
+.label {
+    display: inline-block;
+    text-align: right;
+    width: 190px;
+}
+
+textarea {
+    font-family: "Montserrat Alternates", Arial, Helvetica, sans-serif;
+    /*répétition du font family car pas hérité du body par les éléments de form*/
+    border: 1px solid #18222b;
+    width: 100%;
+}
+
+/* bouton de connexion */
+input[type="submit"] {
+    background-color: #18222b;
+    font-family: "Montserrat Alternates", Arial, Helvetica, sans-serif;
+    color: white;
+    width: 200px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all ease 400ms;
+}
+
+/* hover bouton  */
+input[type="submit"]:hover {
+    background-color: white;
+    color: #18222b;
+    border: 1px solid #18222b;
+}
+
+::placeholder {
+    color: rgb(0, 153, 255);
+    opacity: 1;
+    /* Pour FIREFOX qui met une opacité par défaut sur les placeholder*/
+}
+
+/* Au focus sur tous les éléments sauf sur les boutons radio */
+:focus:not(input[type="radio"]) {
+    border: none;
+    outline: #18222b solid 2px;
+    transition: ease 400ms;
+}
+
+.center {
+    text-align: center
+}
+
+/* Boîte avec tous les billets */
+
+section{
+    /* width: 100vw; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.billets{
+    border: #18222b solid 1px;
+    /* width: 30%; */
+    padding: 20px;
+    /* margin-right: 10px; */
+}
+
+.billets .titre{
+    margin: 0;
+}
+
+.date{
+    margin: 0;
+    font-size: 0.8rem;
+    font-weight: normal;
+}
