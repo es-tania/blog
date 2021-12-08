@@ -1,0 +1,29 @@
+body {
+    font-family: "Montserrat Alternates",Arial, Helvetica, sans-serif;
+}
+h1, h2{
+    text-align: center;
+}
+h1, h2, p{
+    color: #263644;
+}
+
+.article{
+    border: #263644 solid 1px;
+    padding: 20px;
+}
+a{
+    text-decoration: none;
+    padding: 5Px;
+    border: #263644 solid 1px;
+    border-radius: 5px;
+    color: #263644;
+}
+section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.archive{
+    text-align: center;
+    font-size: 1.5rem;
+}
