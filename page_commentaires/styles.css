@@ -25,10 +25,10 @@ h1, h2, p{
 }
 a{
     text-decoration: none;
-    padding: 5Px;
-    border: #263644 solid 1px;
+    padding: 8px;
+    background-color: #18222b;
     border-radius: 5px;
-    color: #263644;
+    color: white;
 }
 
 /* styles formulaire */
@@ -44,12 +44,14 @@ form {
 
 legend {
     background-color: #18222b;
+    border-radius: 5px;
     color: white;
     padding: 8px 20px;
 }
 
 fieldset {
     border: solid 1px #18222b;
+    border-radius: 5px;
 }
 
 .label {
@@ -61,11 +63,13 @@ fieldset {
 textarea {
     font-family: "Montserrat Alternates", Arial, Helvetica, sans-serif;
     border: 1px solid #18222b;
+    border-radius: 5px;
     width: 100%;
 }
 
 input[type="submit"] {
     background-color: #18222b;
+    border-radius: 5px;
     font-family: "Montserrat Alternates", Arial, Helvetica, sans-serif;
     color: white;
     width: 200px;
@@ -79,6 +83,7 @@ input[type="submit"]:hover {
     background-color: white;
     color: #18222b;
     border: 1px solid #18222b;
+    border-radius: 5px;
 }
 
 input:required {
@@ -96,5 +101,6 @@ input:required:valid {
 :focus:not(input[type="radio"]) {
     border: none;
     outline: #18222b solid 2px;
+    border-radius: 5px;
     transition: ease 400ms;
 }

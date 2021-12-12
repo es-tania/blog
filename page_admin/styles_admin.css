@@ -5,20 +5,20 @@ body {
 
 form {
     width: 600px;
-    /* margin: 0 auto; */
 }
 
 fieldset {
     border: solid 1px #18222b;
+    border-radius: 5px;
 }
 
 legend {
     background-color: #18222b;
+    border-radius: 5px;
     color: white;
     padding: 8px 20px;
 }
 
-/*alignement des label*/
 .label {
     display: inline-block;
     text-align: right;
@@ -27,14 +27,14 @@ legend {
 
 textarea {
     font-family: "Montserrat Alternates", Arial, Helvetica, sans-serif;
-    /*répétition du font family car pas hérité du body par les éléments de form*/
     border: 1px solid #18222b;
+    border-radius: 5px;
     width: 100%;
 }
 
-/* bouton de connexion */
 input[type="submit"] {
     background-color: #18222b;
+    border-radius: 5px;
     font-family: "Montserrat Alternates", Arial, Helvetica, sans-serif;
     color: white;
     width: 200px;
@@ -44,23 +44,22 @@ input[type="submit"] {
     transition: all ease 400ms;
 }
 
-/* hover bouton  */
 input[type="submit"]:hover {
     background-color: white;
     color: #18222b;
     border: 1px solid #18222b;
+    border-radius: 5px;
 }
 
 ::placeholder {
     color: rgb(0, 153, 255);
     opacity: 1;
-    /* Pour FIREFOX qui met une opacité par défaut sur les placeholder*/
 }
 
-/* Au focus sur tous les éléments sauf sur les boutons radio */
 :focus:not(input[type="radio"]) {
     border: none;
     outline: #18222b solid 2px;
+    border-radius: 5px;
     transition: ease 400ms;
 }
 
@@ -71,16 +70,14 @@ input[type="submit"]:hover {
 /* Boîte avec tous les billets */
 
 section{
-    /* width: 100vw; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
 .billets{
     border: #18222b solid 1px;
-    /* width: 30%; */
+    border-radius: 5px;
     padding: 20px;
-    /* margin-right: 10px; */
 }
 
 .billets .titre{

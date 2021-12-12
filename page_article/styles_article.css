@@ -10,16 +10,14 @@ h1{
 /* Boîte avec tous les billets */
 
 section{
-    /* width: 100vw; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
 .billets{
     border: #18222b solid 1px;
-    /* width: 30%; */
+    border-radius: 5px;
     padding: 20px;
-    /* margin-right: 10px; */
 }
 
 .billets .titre{
@@ -34,6 +32,7 @@ section{
 
 .bouton{
     background-color: #18222b;
+    border-radius: 5px;
     color: white;
     width: max-content;
     padding: 10px;

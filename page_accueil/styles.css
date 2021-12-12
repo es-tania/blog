@@ -10,14 +10,15 @@ h1, h2, p{
 
 .article{
     border: #263644 solid 1px;
+    border-radius: 5px;
     padding: 20px;
 }
 a{
     text-decoration: none;
-    padding: 5Px;
-    border: #263644 solid 1px;
+    padding: 8px;
+    background-color: #18222b;
     border-radius: 5px;
-    color: #263644;
+    color: white;
 }
 section{
     display: grid;

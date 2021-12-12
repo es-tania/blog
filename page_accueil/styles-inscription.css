@@ -14,11 +14,13 @@ form {
 }
 legend {
     background-color: #18222b;
+    border-radius: 5px;
     color: white;
     padding: 8px 20px;
 }
 fieldset {
     border: solid 1px #18222b;
+    border-radius: 5px;
 }
 
 /*alignement des label*/
@@ -31,6 +33,7 @@ fieldset {
 /* bouton de connexion */
 input[type="submit"] {
     background-color: #18222b;
+    border-radius: 5px;
     font-family: "Montserrat Alternates",Arial, Helvetica, sans-serif;
     color: white;
     width: 200px;
@@ -45,6 +48,7 @@ input[type="submit"]:hover {
     background-color: white;
     color: #18222b;
     border: 1px solid #18222b;
+    border-radius: 5px;
 }
 
 /* mise en forme des champs input obligatoires */

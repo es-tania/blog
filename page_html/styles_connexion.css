@@ -14,23 +14,24 @@ form {
 }
 legend {
     background-color: #18222b;
+    border-radius: 5px;
     color: white;
     padding: 8px 20px;
 }
 fieldset {
     border: solid 1px #18222b;
+    border-radius: 5px;
 }
 
-/*alignement des label*/
 .label{
     display: inline-block; 
     text-align: right;
     width: 190px; 
 }
 
-/* bouton de connexion */
 input[type="submit"] {
     background-color: #18222b;
+    border-radius: 5px;
     font-family: "Montserrat Alternates",Arial, Helvetica, sans-serif;
     color: white;
     width: 200px;
@@ -40,19 +41,17 @@ input[type="submit"] {
     transition: all ease 400ms;
 }
 
-/* hover bouton  */
 input[type="submit"]:hover {
     background-color: white;
     color: #18222b;
     border: 1px solid #18222b;
+    border-radius: 5px;
 }
 
-/* mise en forme des champs input obligatoires */
 input:required {
     border: 1px solid #e52c2c;     
 }
 
-/* mise en forme des champs input obligatoires qui deviennent valides*/
 input:required:valid {
         border: 1px solid #1a961a;
 }
@@ -60,12 +59,11 @@ input:required:valid {
 ::placeholder {
     color: rgb(255, 132, 0);
     opacity: 1; 
-    /* Pour FIREFOX qui met une opacité par défaut sur les placeholder*/
 }
 
-/* Au focus sur tous les éléments sauf sur les boutons radio */
 :focus:not(input[type="radio"]){
     border:none;
     outline:#18222b solid 2px;
+    border-radius: 5px;
     transition: ease 400ms;
 }
