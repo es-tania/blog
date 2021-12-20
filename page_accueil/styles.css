@@ -8,6 +8,21 @@ h1, h2, p{
     color: #263644;
 }
 
+.entete{
+    display: flex;
+    justify-content: space-between;
+}
+
+.entete a{
+    display: block;
+    height: max-content;
+    margin: 0;
+}
+
+.entete h1{
+    margin: 0;
+}
+
 .article{
     border: #263644 solid 1px;
     border-radius: 5px;

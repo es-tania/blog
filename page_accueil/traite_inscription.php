@@ -5,11 +5,15 @@ $db=new PDO('mysql:host=localhost;dbname=prjt_blog;port=3306;charset=utf8', 'roo
 $requete="SELECT * FROM users WHERE login = '{$_GET["login"]}';";
 $stmt=$db -> query($requete);
 
+$requete2 = "SELECT * FROM users WHERE mail = '{$_GET["mail"]}';";
+$stmt2=$db -> query($requete2);
+
 if ($stmt->rowcount()==1){
     $result=$stmt->fetch(PDO::FETCH_ASSOC);
-	echo "Ce pseudo existe déjà";
-	echo '<br><a href="inscription.php">Revenir à la page d`inscription</a>';
-
+	header ('Location:inscription.php?err=login');
+}elseif($stmt2->rowcount()==1){
+    $result=$stmt2->fetch(PDO::FETCH_ASSOC);
+    header ('Location:inscription.php?err=mail');
 }else{
     $requete = "INSERT INTO users VALUES (NULL,:login,:nom,:prenom,:mail,:mdp,:admin)";
 
@@ -23,7 +27,6 @@ if ($stmt->rowcount()==1){
     $hash= password_hash($_GET["pwd"],PASSWORD_DEFAULT);
     $stmt->bindParam(':mdp',$hash , PDO::PARAM_STR); 
     $stmt->execute();
-    echo "L inscription s'est bien deroulee<br>";
-    echo '<br><a href="../page_accueil/index.html">afficher les utilisateurs</a>';
+    header ('Location:accueil.php');
 }
 ?>

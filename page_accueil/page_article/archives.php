@@ -1,3 +1,5 @@
+<?php session_start();?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles_article.css">
+    <link rel="stylesheet" href="styles_archives.css">
     <title>Articles</title>
 </head>
 
@@ -23,13 +25,19 @@
             <p>'.$row['contenu_billet'].'</p>
             
             <span class="date">'.$row['date_billet'].'</span><br>
-            <p><a href="">Voir le billet</a></p>
+            <form action="article.php">
+                <input name="billet" style="display:none;" value='.$row["id_billet"].'>
+                <input type="submit" value="Voir le billet">
+            </form>
+            
             </div>
             ';
         }
         ?>
     </section>
-    <p class="bouton"><a href="#">Revenir à l'accueil</a></p>
+    <p class="bouton"><a href="../accueil.php">Revenir à l'accueil</a></p>
+
+    <!-- <p><a href="article.php">Voir le billet</a></p> -->
 </body>
 
 </html>

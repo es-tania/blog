@@ -6,6 +6,17 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connexion</title>
+    <style>
+        .message_erreur_pseudo,
+        .message_erreur_mdp {
+            margin: 0;
+            color: red;
+            font-size: 0.8rem;
+            /* width:100%; */
+            grid-column: 1 / 3;
+            text-align: center;
+        }
+    </style>
     <link rel="stylesheet" href="styles_connexion.css">
 </head>
 
@@ -30,14 +41,14 @@ echo "Bonjour {$_SESSION["login"]}<BR>";
                 <input type="text" id="pseudo" name="login" required>
             </p>
             <?php 
-	            if (isset($_GET["err"]) && $_GET["err"]=="login") { echo "ATTENTION MAUVAIS LOGIN";}
+	            if (isset($_GET["err"]) && $_GET["err"]=="login") { echo '<p class="message_erreur_pseudo">Pseudo incorrecte</p>';}
 		    ?>
             <p>
                 <label class="label" for="pwd">Mot de passe<span class="obligatoire">*</span></label>
                 <input type="password" id="pwd" name="pwd" required>
             </p>
             <?php 
-	            if (isset($_GET["err"]) && $_GET["err"]=="mdp") { echo "ATTENTION MAUVAIS MOT DE PASSE";}
+	            if (isset($_GET["err"]) && $_GET["err"]=="mdp") { echo '<p class="message_erreur_pseudo">Mot de passe incorrecte</p>';}
 		    ?>
             <p class="center">
                 <input type="submit" value="Se connecter">

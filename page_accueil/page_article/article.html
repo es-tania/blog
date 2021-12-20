@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles_article.css">
+    <title>Commentaires</title>
+</head>
+<body>
+    <h1>Blog</h1>
+    <div class="article">
+        <h2>Titre - Date </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident doloribus, minus ipsa nostrum rerum placeat quasi quod ad inventore suscipit ipsam, neque eius quo itaque beatae aliquid ea sit aliquam.</p>
+    </div>
+    <p><a href="">Afficher commentaires</a> </p>
+    <h2>Commentaires</h2>
+    <div class="commentaire">
+        <h3>Pseudo - Date </h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident doloribus, minus ipsa nostrum rerum placeat quasi quod ad inventore suscipit ipsam, neque eius quo itaque beatae aliquid ea sit aliquam.</p>
+    </div>
+    <div class="commentaire">
+        <h3>Pseudo - Date </h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident doloribus, minus ipsa nostrum rerum placeat quasi quod ad inventore suscipit ipsam, neque eius quo itaque beatae aliquid ea sit aliquam.</p>
+    </div>
+    
+    <form action="#" method="">
+
+        <fieldset>
+            <legend>Ajouter commentaire</legend>
+            <p>
+                <label class="label" for="pseudo">Pseudo<span class="obligatoire">*</span></label>
+                <input type="text" id="pseudo" required>
+            </p>
+            <p>
+                <label class="label" for="date">Date</label>
+                <input type="date" id="start" name="trip-start" value="2021-11-22" min="2021-01-01" max="2023-12-31">
+            </p>
+            <legend>Commentaire</legend>
+
+            <textarea rows="5" cols="60" placeholder="De quoi voulez vous parler?"></textarea>
+
+            <p class="center">
+                <input type="submit" value="Ajouter">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

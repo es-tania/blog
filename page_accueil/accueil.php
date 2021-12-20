@@ -1,4 +1,4 @@
-<?php session_start()
+<?php session_start();
 ?>
 
 <!DOCTYPE html>
@@ -14,11 +14,24 @@
 </head>
 
 <body>
+    <div class="entete">
     <h1>Blog</h1>
-    <?php 
-    if(!isset($_SESSION["login"])){
-        echo '<a href="connexion.php">Me connecter </a>';
-    }?>
+        <?php
+        if(!isset($_SESSION["login"])){
+            echo '<a href="connexion.php">Me connecter </a>';
+        };?>
+            <?php
+        if(isset($_SESSION["login"])){
+            echo '<a href="">
+            Déconnexion';
+        };
+        ?>
+        <?php
+            session_destroy();
+            echo '</a>';
+        ?>
+        
+    </div>
 
     <h2>Les 3 derniers articles </h2>
     <section>
@@ -33,25 +46,14 @@
             <p>'.$row['contenu_billet'].'</p>
             <span class="date">'.$row['date_billet'].'</span><br>
             <p><a href="">Voir le billet</a></p>
-            <a href="">Supprimer</a>
             </div>
             ';
         }
         ?>
-    </section>
-
-    
-
-    <p><a href="">
-        Déconnexion</a>
-        <?php 
-    session_destroy();
-    // $_SESSION[""];
-    ?>
-    </p>
+    </section>    
 
     <p class="archive">
-        <a href=""> Archives </a>
+        <a href="page_article/archives.php"> Archives </a>
     </p>
 
     <?php 

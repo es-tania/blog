@@ -6,6 +6,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inscription</title>
+    <style>
+        .message_erreur_pseudo,
+        .message_erreur_mdp {
+            margin: 0;
+            color: red;
+            font-size: 0.8rem;
+            /* width:100%; */
+            grid-column: 1 / 3;
+            text-align: center;
+        }
+    </style>
     <link rel="stylesheet" href="styles-inscription.css">
 </head>
 
@@ -26,6 +37,7 @@
                 <label class="label" for="pseudo">Pseudo<span class="obligatoire">*</span>
                 </label>
                 <input type="text" id="pseudo" name="login" required>
+                <?php if (isset($_GET["err"]) && $_GET["err"]=="login") { echo '<p class="message_erreur_pseudo">Pseudo déjà utilisé, veuillez en sélectionner un autre</p>';} ?>
             </p>
             <p>
                 <label class="label" for="contact_nom">Nom<span class="obligatoire">*</span>
@@ -41,6 +53,7 @@
                 <label class="label" for="email">Email<span class="obligatoire">*</span>
                 </label>
                 <input id="email" type="email" name="mail" required>
+                <?php if (isset($_GET["err"]) && $_GET["err"]=="mail") { echo '<p class="message_erreur_pseudo">Email déjà utilisé, veuillez en sélectionner un autre</p>';} ?>
             </p>
             <p>
                 <input type="text" name="admin" required style="display: none;" value="non">
