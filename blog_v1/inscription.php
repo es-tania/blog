@@ -1,6 +1,4 @@
-<?php session_start();
-
-?>
+<?php session_start(); ?>
 
 <head>
     <meta charset="UTF-8">
@@ -21,12 +19,6 @@
 </head>
 
 <body>
-
-    <!-- <?php   if (isset($_SESSION["login"])) {
-            echo "Bonjour {$_SESSION["login"]}<BR>";
-        }
-
-?> -->
 
     <form action="traite_inscription.php">
         <fieldset>
@@ -66,7 +58,7 @@
             <p class="center">
                 <input type="submit" value="S'inscrire">
             </p>
-            <p>J'ai déjà un compte - <a href="../page_connexion/connexion.php">M'inscrire</a></p>
+            <p>J'ai déjà un compte - <a href="connexion.php">M'inscrire</a></p>
         </fieldset>
     </form>
 </body>

@@ -1,6 +1,4 @@
 <?php
-session_start();
-
 $db=new PDO('mysql:host=localhost;dbname=prjt_blog;port=3306;charset=utf8', 'root', '');
 $db->query('SET NAMES utf8');
 
@@ -12,16 +10,17 @@ $stmt->execute();
 if ($stmt->rowcount()==1){
 	$result=$stmt->fetch(PDO::FETCH_ASSOC);
 	if (password_verify($_GET["pwd"],$result["passwd"])){
-		// echo "SUPER !!! vous etes connecté";
+		session_start();
 		$_SESSION["login"]=$_GET["login"];
-		// echo '<br><a href="../page_accueil/index.html">Aller à la page d`accueil</a>';
-		// header ('Location:accueil.php');
-		header ('Location:page_article/article.php?billet=1');
+		$_SESSION["idlogin"] = $result["id_utilisateur"];
+		header ('location:accueil.php');
+		// header ('Location:page_article/article.php?billet=1');
 	} else {
 		// echo $_GET["pwd"];
-		header ('Location:connexion.php?err=mdp');
+		header ('location:connexion.php?err=mdp');
 	}
 
 } else {
-	header ('Location:connexion.php?err=login');
+	header ('location:connexion.php?err=login');
 }
+?>

@@ -1,5 +1,4 @@
-<?php
-session_start();
+<?php 
 $db=new PDO('mysql:host=localhost;dbname=prjt_blog;port=3306;charset=utf8', 'root', '');
 
 $requete="SELECT * FROM users WHERE login = '{$_GET["login"]}';";
@@ -27,6 +26,10 @@ if ($stmt->rowcount()==1){
     $hash= password_hash($_GET["pwd"],PASSWORD_DEFAULT);
     $stmt->bindParam(':mdp',$hash , PDO::PARAM_STR); 
     $stmt->execute();
+    session_start();
+    $_SESSION["login"]=$_GET["login"];
+	$_SESSION["idlogin"] = $result["id_utilisateur"];
     header ('Location:accueil.php');
+    exit();
 }
 ?>

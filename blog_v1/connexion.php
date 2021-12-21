@@ -1,7 +1,4 @@
-<?php 
-session_start();
-?>
-
+<?php session_start(); ?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,14 +18,6 @@ session_start();
 </head>
 
 <body>
-
-    <!-- <?php	if (isset($_SESSION["login"]))
-{ 
-echo "Bonjour {$_SESSION["login"]}<BR>"; 
-}
-
-
-?> -->
 
     <form action="traite_login.php">
 
@@ -53,7 +42,7 @@ echo "Bonjour {$_SESSION["login"]}<BR>";
             <p class="center">
                 <input type="submit" value="Se connecter">
             </p>
-            <p>Je n'ai pas de compte - <a href="../page_inscription/inscription.php">M'inscrire</a></p>
+            <p>Je n'ai pas de compte - <a href="inscription.php">M'inscrire</a></p>
         </fieldset>
     </form>
 
