@@ -1,0 +1,12 @@
+Projet de ESTEVES Tania & SAMSON Roxana
+
+Lien du projet :
+https://etudiant.u-pem.fr/~tania.esteves/blog/
+
+Code de connexion administrateur : 
+Pseudo : Admin
+MDP : Admin123
+
+Code connexion utilisateur :
+Pseudo : utilisateur
+MDP: utilisateur123

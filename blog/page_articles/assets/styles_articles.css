@@ -1,0 +1,48 @@
+main{
+    width: 50%;
+}
+
+main h1{
+    width:fit-content;
+    font-weight: 600;
+    font-size: 1.9rem;
+}
+
+.affichecom{
+    background-color: #0BA84A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    width: max-content;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.affichecom p{
+    margin: 0;
+    color: white;
+    width: max-content;
+    font-size: 0.8rem;
+}
+
+.affichecom img{
+    margin-top: 4px;
+    margin-left: 10px;
+    height: 20px;
+    display: block;
+}
+
+.com{
+    margin-bottom: 30px;
+}
+
+.com p{
+    margin: 0;
+}
+
+.ajoutarticle{
+    width: 70%;
+}

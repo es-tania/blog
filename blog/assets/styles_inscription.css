@@ -1,0 +1,59 @@
+main {
+    width: 40%;
+    padding: 30px 50px;
+}
+
+main h1 {
+    margin: auto;
+}
+
+main form{
+    width: 100%;
+}
+
+.champs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+main p{
+    font-size: 14px;
+}
+
+#pseudo, #mdp, #email {
+    grid-column: 1 / 3;
+}
+
+form input{
+    font-family: 'Poppins';
+    width: 100%;
+    border: solid #D5D5D5 1px;
+    padding: 10px 10px;
+    /* margin-bottom: 10px; */
+    border-radius: 5px;
+}
+
+main input:focus {
+    outline: none;
+}
+
+form .voirplus{
+    width: max-content;
+    margin-top: 15px;
+    width: 40%;
+}
+
+.finform{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.finform a{
+    color: black;
+}
+
+.finform a:hover{
+    color: #0BA84A;
+}

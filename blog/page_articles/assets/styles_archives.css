@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins';
+    margin: 0;
+    /* height: 100vh; */
+    /* border: solid pink; */
+}
+
+/* Menu */
+
+nav {
+    display: flex;
+    /* border: red solid; */
+    justify-content: flex-end;
+    align-items: center;
+    height: 12vh;
+    padding-right: 5%;
+    padding-left: 5%;
+    font-size: 18px;
+    box-shadow: 0px 7px 16px #00000029;
+    margin-bottom: 60px;
+    background-color:white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav .nav-right {
+    margin-left: 111px;
+}
+
+.nav-right .connexion {
+    background-color: #0BA84A;
+    margin: 0;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 1vw;
+}
+
+/* Contenu */
+
+main {
+    box-shadow: -2px -2px 9px #00000029;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1px 30px 30px 30px;
+    /* border: red solid; */
+    margin-bottom: 5%;
+}
+
+main h1 {
+    /* border: pink solid; */
+    width: max-content;
+    /* margin: 0; */
+}
+
+main h2 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.ligne_titre {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.ligne_titre:before {
+    content: "";
+    width: 35px;
+    border-bottom: 2px solid #707070;
+    margin-right: 5px;
+}
+
+.ligne_titre:after {
+    content: "";
+    /* width: 100%; */
+    flex: 1;
+    border-bottom: 2px solid #707070;
+    margin-left: 5px;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+}
+
+section div {
+    /* border: green solid; */
+    height: max-content;
+}
+
+section div h3 {
+    font-weight: 500;
+}
+
+section .contenu_article p {
+    font-size: 14px;
+    line-height: 30px;
+    margin: 0;
+    position: absolute;
+}
+
+section .contenu_article {
+    /* border: pink solid; */
+    height: 18vh;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+}
+
+.date {
+    font-size: 12px;
+}
+
+.voirplus{
+    background-color: #0BA84A;
+    border: none;
+    color: white;
+    font-family: 'Poppins';
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10%;
+}
+
+.voirplus:hover, .decouvrirplus:hover{
+    font-weight: 700;
+    /* text-decoration: underline; */
+}
+
+/* Formulaire */
+
+.ajoutarticle{
+    /* border: red solid; */
+    width: 45%;
+}
+
+.ajoutarticle input[type="text"], .ajoutarticle textarea{
+    font-family: 'Poppins';
+    width: 100%;
+    border: solid #D5D5D5 1px;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.ajoutarticle input[type="text"]:focus, .ajoutarticle textarea:focus{
+    outline: none;
+}
+
+.ajoutarticle .voirplus{
+    margin-bottom: 0;
+}
